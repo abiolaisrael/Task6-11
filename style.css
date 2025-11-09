@@ -1,0 +1,600 @@
+/*==Content + padding + border==*/
+*{
+    box-sizing: border-box;
+}
+
+/*==Styling the entire body==*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    max-width: 100vw;
+    height: 100%;
+}
+
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    cursor: pointer;
+    margin: 22px 22px 22px auto; 
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background-color: white; 
+    border-radius: 2px;
+}
+
+/*==Styling navigation bar==*/
+.navbar {
+    background-color: #1c2d3f;
+    padding: 8px 0;
+    position: fixed;
+    width: 100%;
+}
+
+/*==Stlying navigation links==*/
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+}
+
+ /*==Style for navigation link==*/
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    border: 1.5px solid rgb(56, 55, 55);
+    padding: 8px;
+    box-shadow: inset 0 -0.3px 0 white;
+    display: inline-block;
+}
+
+/*==Hovering over background color for links==*/
+.navbar a:hover {
+    background-color: rgb(56, 55, 55);
+}
+
+/*==Head section==*/
+.background1 {
+    height: 100vh;
+    background-image: url('https://mohkabir.github.io/oschallenge1/images/01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    line-height: 0.4;
+    color: white;
+    width: 100%;
+}   
+
+/*==H1 text for background1==*/
+.background1-text h1 {
+    font-size: 50px;
+    font-weight: lighter;
+    text-shadow: 0 2px 3px black, 0 2px 5px rgb(34, 12, 12);
+    initial-letter: 3px;
+}
+
+/*==P text for background1==*/
+.background1-text p {
+    font-size: 22px;
+    font-weight: bolder;
+    word-spacing: 1px;
+    color: white;
+}
+
+/*==Container1 section==*/
+.container1 {
+    flex-wrap: wrap;
+    padding: 45px 30px;
+}
+
+/*==Sub-section1==*/
+.sub-section1 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    text-align: center;
+    margin-bottom: 23px;
+    flex: 33.3%;
+}
+
+/*==For cards in sub-section1==*/
+div.card1 {
+    width: 250px;
+    font-size: 12px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(238, 234, 234);
+}
+
+/*==For cards contents==*/
+div.container1-1 {
+    padding: 1px 10px 10px 10px;
+}
+
+/*==Sub-section1-2==*/
+.sub-section1-2{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    flex: 50%;
+}
+
+/*==For cards in sub-section1-2==*/
+div.card1-2 {
+    width: 500px;
+    font-size: 12px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(238, 234, 234);
+}
+
+/*==Sub-section1-2==*/
+div.container1-2 {
+    padding: 1px 10px 10px 10px;
+}
+
+/*==Bootstrap text==*/
+.bootstrap {
+    color: rgb(36, 134, 36);
+}
+
+/*==Design text==*/
+.design {
+    color: rgb(70, 70, 185);
+}
+
+/*==The green button==*/
+.green {
+    background-color: rgb(36, 134, 36);
+    color: white;
+    cursor: pointer;
+    padding: 5px 18px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/*==Hovering over the green button==*/
+.green:hover {
+    background-color: rgb(36, 134, 36, 0.6);
+}
+
+/*==The blue button==*/
+.details {
+    background-color: rgb(70, 70, 185);
+    color: white;
+    cursor: pointer;
+    padding: 5px 18px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/*==Hovering over the blue button==*/
+.details:hover {
+    background-color: rgb(70, 70, 185, 0.6);
+}
+
+/*==The red button==*/
+.red {
+    background-color: rgb(94, 16, 16);
+    color: white;
+    cursor: pointer;
+    padding: 5px 18px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/*==Hovering over the red button==*/
+.red:hover {
+    background-color: rgb(94, 16, 16, 0.6);
+}
+
+/*==The read more button==*/
+.more-info {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 5px 18px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/*==Hovering over read more button==*/
+.more-info:hover {
+    background-color: rgb(238, 234, 234);
+}
+
+/*==The more details button==*/
+.explore {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 5px 18px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+/*==Hovering over more details button==*/
+.explore:hover {
+    background-color: rgb(238, 234, 234);
+}
+
+/*==Stying background2==*/
+.background2 {
+    height: 100vh;
+    background-image: url('https://mohkabir.github.io/oschallenge1/images/07.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    line-height: 1;
+    color: white;
+    padding: 13px;
+    width: 100%;
+}
+
+/*==To style p background2==*/
+.background2 p {
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+/*==Stlying container2==*/
+.container2 {
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 25px 10px
+}
+
+/*==To style sub-section2-1==*/
+.sub-section2-1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    flex: 25%;
+}
+
+/*==To style div.card2-1==*/
+div.card2-1 {
+    width: 200px;
+    font-size: 12px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(238, 234, 234);
+}
+
+/*==To style div.container2-1==*/
+div.container2-1 {
+    padding: 1px 10px 10px 10px;
+}
+
+/*==To style sub-section2-2==*/
+.sub-section2-2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/*==To style div.card2-2==*/
+div.card2-2 {
+    width: 700px;
+    font-size: 12px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(238, 234, 234);
+}
+
+/*==Style div.container2-2==*/
+div.container2-2 {
+    padding: 1px 10px 10px 10px;
+}
+
+.background3 {
+    height: 100vh;
+    background-image: url('https://mohkabir.github.io/oschallenge1/images/13.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: whitesmoke;
+    padding: 50px 100px;
+    width: 100%;
+}
+
+.form-container {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+/*==Background3 heading==*/
+.form-container h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+/*==Background3 paragraph==*/
+.form-container p {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+    font-size: 12px;
+    padding: 8px 3px;
+    border: none;
+    border-radius: 3px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+/*.flexbox2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-top: -40px;
+}*/
+
+.form-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-right {
+    flex: 1;
+    display: flex;
+
+    width: 100%;
+}
+
+input {
+    padding: 5px 200px 5px 5px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 8px;
+}
+
+textarea {
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 8px;
+    min-width: 100%;
+    min-height: 120px;
+}
+
+.send-button {
+  padding: 4px 10px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 5px;
+  margin-left: 10px;
+  transform: translate(0, -35px);
+}
+
+/*==Styling footer==*/
+footer {
+    text-align: center;
+}
+
+/*==Styling footer heading==*/
+footer h2 {
+    margin-top: 25px;
+    font-style: italic;
+    font-weight: 1;
+    font-size: larger;
+}
+
+/*==Footer first paragraph==*/
+.base1 {
+    font-size: xx-small;
+    color: rgb(156, 154, 154);
+    margin-bottom: 20px;
+}
+
+/*==Styling horizontal rule==*/
+hr {
+    height: 1.5px;
+    border: 10px;
+    background-color: rgb(252, 250, 250);
+    margin: 0 20px;
+}
+
+/*==2 last paragraphs==*/
+.base2 {
+    font-size: 9px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+
+@media screen and (max-width: 600px) {
+/* Hamburger shown only on mobile */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background-color: rgb(28, 28, 39);
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: auto;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+
+.sub-section1 {
+    gap: 25px;
+    text-align: center;
+    margin-bottom: 23px;
+    flex: 100%;
+    flex-direction: column;
+}  
+div.card1 {
+    width: 100%;
+} 
+nav {
+    background-color: rgb(28, 28, 39);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+.sub-section1-2 {
+    gap: 30px;
+    text-align: center;
+    flex: 100%;
+    flex-direction: column;
+}
+div.card1-2 {
+    width: 100%;
+}
+.sub-section2-1 {
+    gap: 30px;
+    text-align: center;
+    flex: 100%;
+    flex-direction: column;
+}
+div.card2-1 {
+    width: 100%;
+}
+.nav-links {
+    flex-direction: flex;
+    align-items: center;
+}
+.nav-links li {
+    width: auto;
+    padding: 0;
+    text-align: center;
+}
+.nav-links li a {
+    padding: 0;
+    font-size: 10px;
+    margin: 5px;
+}
+.navbar {
+    background-color: #1c2d3f;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+}
+.send-button {
+  margin-top: 30px;
+}
+.background1, .background2 {
+    height: 30vh;
+} 
+.background3 {
+    height: 80vh;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+} 
+form {
+    flex-direction: column;
+}
+input {
+    padding: 7px 18px 7px 7px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 8px;
+}
+textarea {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.send-button {
+  padding: 4px 10px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 5px;
+}
+/*.send-button {
+  margin-top: 10px;
+  padding: 5px 12px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 5px;
+  margin-left: -220px;
+}*/
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+}
+}
